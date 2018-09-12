@@ -1,0 +1,142 @@
+/* global attributes for whole page */
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin:0;
+  padding:0
+}
+
+.left-column{
+  float: left;
+  padding: 30px 0px 30px 30px;
+  width: 430px;
+  border-style: none solid none none;
+  border-right-width: 2px;
+  border-right-color: #aaaaaa;
+}
+
+.right-column{
+  float: left;
+  padding: 50px 0px 0px 50px;
+  width: 50%;
+  /* border-style: none none none solid;
+  border-left-color: #aaaaaa; */
+}
+
+.title{
+  font-size: 200%;
+  font-weight: bold;
+  text-align: left;
+}
+
+.logo{
+  height: 80px;
+  padding-right: 5px;
+}
+
+
+.header{
+  font-size: 400%;
+  font-weight: bold;
+  text-align: left;
+}
+
+.sub-header{
+  font-size: 150%;
+  padding: 10px 0px;
+}
+
+.github-div{
+  font-size: 150%;
+  padding-top: 30px;
+  text-decoration: none;
+}
+
+.github-link:visited{
+  color: #0000ff;
+}
+
+.github-name{
+  font-size: 120%;
+}
+
+.menu{
+  font-size: 150%;
+  padding-top: 50px;
+}
+
+.menu-item{
+  margin: 10px 0;
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu-item:visited{
+  color: #000000;
+}
+
+.menu-item:hover{
+  /* font-size: 110%; */
+  text-decoration: underline;
+}
+
+/* general styling */
+p {
+  font-size: 110%;
+}
+
+a:visited{
+  color: #0000ff;
+}
+
+.process-img{
+  width: 100%;
+  padding-right: 30px;
+}
+
+.process-des{
+  font-size: 110%;
+  padding: 10px;
+}
+
+.process-des th{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.process-des td{
+  padding-bottom: 5px;
+  padding-left: 15px;
+}
+
+.code{
+  background-color: #eeeeee;
+  padding: 10px;
+}
+
+.code_block{
+  background-color: #eeeeee;
+  padding: 10px;
+  width: 50%;
+}
+
+.example{
+  padding-top: 20px;
+}
+
+.sidepane{
+  float: right;
+  width: 40%;
+}
+
+.image-link{
+  text-decoration: none;
+  color: #000000;
+}
+.image-link:visited{
+  color: #000000;
+}

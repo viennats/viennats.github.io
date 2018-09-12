@@ -1,0 +1,34 @@
+<h1>Getting Started</h1>
+
+<h3>Get ViennaTS</h3>
+
+<p><a href="#content/downloads.html">Download a binary or build ViennaTS from source.</a></p>
+
+<h3>Running ViennaTS</h3>
+
+<p>ViennaTS is run in the command line by passing the parameter file as the first argument:</p>
+<span class="code">$ viennats par.txt</span>
+<p>Where par.txt is the parameter file specifying all relevant information.</p>
+
+<p>The general structure of the parameter file is as follows:</p>
+
+<pre class="code_block"><code class="c++">General parameters
+(input geometry, boundary conditions, resolution,...)
+
+processes = {
+  {
+    Process specific parameters
+    (The model to use, output times, length of process,...)
+
+    parameters= {
+      Model specific parameters
+      (strongly model dependent)
+
+    };
+  }
+};
+
+</code></pre>
+<!-- <img style="width: 40%;" src="content/imgs/param_structure.png"></img> -->
+<p><a href="http://128.131.68.142:8000/#content/examples.html">The example section</a> contains guided examples to help getting started.</p>
+<p>A detailed summary of all required and optional parameters can be found in the <a target="_blank" rel="noreferrer noopener" href="https://github.com/viennats/viennats-dev/blob/master/docs/ViennaTS_User_Guide.pdf">User Guide</a>.

@@ -1,0 +1,28 @@
+{
+  "menu-items": [
+    "Home",
+    "Getting Started",
+    "Examples",
+    "User Guide",
+    "Documentation",
+    "Get ViennaTS"
+  ],
+
+  "menu-links": [
+    "content/home.html",
+    "content/getting-started.html",
+    "content/examples.html",
+    "https://github.com/viennats/viennats-dev/blob/master/docs/ViennaTS_User_Guide.pdf",
+    "content/docs/index.html",
+    "content/downloads.html"
+  ],
+
+  "menu-link-external": [
+    false,
+    false,
+    false,
+    true,
+    true,
+    false
+  ]
+}
