@@ -47,8 +47,9 @@ function make_page(items_text){ //parse json and create menu
       }
     }
     link.innerHTML = page_layout["menu-items"][i];
-    link.classList.add('menu-item');
+    link.classList.add('menu-link');
     item.appendChild(link);
+    item.classList.add('menu-item');
     list.appendChild(item);
 
   }

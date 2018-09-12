@@ -12,17 +12,12 @@ body {
   float: left;
   padding: 30px 0px 30px 30px;
   width: 430px;
-  border-style: none solid none none;
-  border-right-width: 2px;
-  border-right-color: #aaaaaa;
 }
 
 .right-column{
   float: left;
   padding: 50px 0px 0px 50px;
   width: 50%;
-  /* border-style: none none none solid;
-  border-left-color: #aaaaaa; */
 }
 
 .title{
@@ -49,38 +44,91 @@ body {
 }
 
 .github-div{
+  width: 80%;
   font-size: 150%;
-  padding-top: 30px;
+  padding: 5px;
   text-decoration: none;
+  background-color: #000;
+  border-radius: 10px;
+}
+
+.github-link{
+  color: fff;
+  padding-left: 20px;
+  text-decoration: none;
+  outline: none;
 }
 
 .github-link:visited{
-  color: #0000ff;
+  color: #fff;
+  outline: none;
+}
+
+.github-logo{
+  float: left;
+  padding: 10px;
+  /* vertical-align: middle; */
+}
+
+.github-title{
+  float: left;
 }
 
 .github-name{
-  font-size: 120%;
+  padding-left: 20px;
+  font-size: 80%;
+  vertical-align: middle;
+  color: #fff;
 }
 
 .menu{
   font-size: 150%;
-  padding-top: 50px;
+  width: 70%;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+.menu-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .menu-item{
-  margin: 10px 0;
+  margin: 2px 0;
   color: #000000;
   text-decoration: none;
   cursor: pointer;
+  outline: none;
 }
 
-.menu-item:visited{
-  color: #000000;
+.menu-link{
+  display: block;
+  padding-left: 10px;
+  border-left: 8px solid #000;
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+  font-size: 120%;
+  }
+
+.menu-link:hover{
+  border-left: 10px solid #000;
+  background-color: #ddd;
+  color: #000;
+}
+
+.menu-link:visited{
+  color: #000;
 }
 
 .menu-item:hover{
-  /* font-size: 110%; */
-  text-decoration: underline;
+  outline: none;
+}
+
+.menu_item:link{
+  outline: none;
 }
 
 /* general styling */
