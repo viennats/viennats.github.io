@@ -111,6 +111,7 @@ body {
   text-decoration: none;
   width: 100%;
   font-size: 120%;
+  outline: none;
   }
 
 .menu-link:hover{
