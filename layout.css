@@ -67,11 +67,11 @@ body {
 .github-logo{
   float: left;
   padding: 10px;
-  /* vertical-align: middle; */
 }
 
 .github-title{
   float: left;
+  color: #fff;
 }
 
 .github-name{
@@ -136,9 +136,9 @@ p {
   font-size: 110%;
 }
 
-a:visited{
+/* a:visited{
   color: #0000ff;
-}
+} */
 
 .process-img{
   width: 100%;
