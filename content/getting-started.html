@@ -32,3 +32,18 @@ processes = {
 <!-- <img style="width: 40%;" src="content/imgs/param_structure.png"></img> -->
 <p><a href="#content/examples.html">The example section</a> contains guided examples to help getting started.</p>
 <p>A detailed summary of all required and optional parameters can be found in the <a target="_blank" rel="noreferrer noopener" href="https://github.com/viennats/viennats-dev/blob/master/docs/ViennaTS_User_Guide.pdf">User Guide</a>.
+
+
+<h3>Viewing Output</h3>
+
+<p>By default, ViennaTS outputs binary levelset files (.lvst). They are direct copies of the internal
+data structure used by ViennaTS and the most memory efficient. For visualisation, ViennaTS can also output
+different other data structures, such as VTK files. These are ASCII text files containing an explicit surface
+representation.</p>
+<p>Especially for long simulations, we recommend only outputting .lvst files at short intervals and
+converting them to VTK files later for visualisation. In this way memory consumption during simulation is kept
+low, keeping the maximum number of time steps. Conversion to other formats for visualisation is straight-forward
+using:</p>
+<span class="code">$ viennats -ls2vtk output.lvst</span>
+<p>This will create a file "output.vtk", which can be viewed with a visualisation tool,
+such as <a href="https://www.paraview.org/" target="_blank" rel="noopener noreferrer">ParaView</a>.</p>
