@@ -1,0 +1,48 @@
+geometry_files="./trench_mask.dx";
+
+print_rates=false;
+print_velocities=false;
+print_materials=false;
+print_vtp=false;
+print_lvst=false;
+remove_bottom=true;
+print_volume_tetra=false;
+print_volume_hull=true;
+
+output_path="./results_straight/";
+
+cfl_condition = 0.45;
+
+// grid_delta=0.09999; // benchmark setting
+grid_delta=0.29999;
+
+default_disk_orientation={0,1,0};
+
+num_dimensions = 2;
+
+omp_threads=1;
+
+open_boundary="+y";
+
+boundary_conditions = {
+	{PERIODIC, PERIODIC},
+	{INFINITE,INFINITE}	
+};
+
+
+processes={
+    {
+	model_name="ConstantRates";
+	process_time=150;
+	add_layer=1;
+
+	output_volume={0,50,100,150};
+
+	parameters={
+		direction={0, -1, 0};
+		directional_rates={-0.5,-0.5,0};
+		constant_rates={0.005,0.005};
+	};
+    }
+};
+

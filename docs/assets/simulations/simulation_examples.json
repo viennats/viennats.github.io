@@ -1,0 +1,156 @@
+{
+    "simulations": [
+        {
+            "devicelevel": 1,
+            "prefixpath": "CylinderEmulate",
+            "parfile": "CylinderEmulate.txt",
+            "geometries": [
+                "bulk.vtk",
+                "mask.vtk"
+            ],
+            "title": "Geometric Hole Etching",
+            "image": "cover.png",
+            "description": "Geometric etching of a cylindrical hole using the \"ConstantRates\"-Model. The symmetry allows to only simulate a quarter of the cylindric hole by applying reflective boundary conditions in the lateral directions."
+        },
+        {
+            "devicelevel": 1,
+            "prefixpath": "CylinderPhysical",
+            "parfile": "CylinderPhysical.txt",
+            "title": "Physical Hole Etching",
+            "geometries": [
+                "bulk.vtk",
+                "mask.vtk"
+            ],
+            "image": "cover.png",
+            "description": "Physical etching of a cylindrical hole using the \"SF6_CH2F2PlasmaEtching\"-Model. The symmetry allows to only simulate a quarter of the cylindric hole by applying reflective boundary conditions in the lateral directions."
+        },
+        {
+            "devicelevel": 1,
+            "prefixpath": "VoidEmulate",
+            "parfile": "VoidEmulate.txt",
+            "geometries": [
+                "trench.vtk"
+            ],
+            "title": "Geometric Air Gap Deposition",
+            "image": "cover.png",
+            "description": "Two-dimensional geometric deposition process creating an air gap using the \"ConstantRates\"-Model."
+        },
+        {
+            "devicelevel": 1,
+            "prefixpath": "VoidPhysical",
+            "parfile": "VoidPhysical.txt",
+            "title": "Physical Air Gap Deposition",
+            "geometries": [
+                "trench.vtk"
+            ],
+            "image": "cover.png",
+            "description": "Two-dimensional physical deposition process creating an air gap using the \"NonlinearDeposition\"-Model."
+        },
+        {
+            "devicelevel": 1,
+            "prefixpath": "HAREmulate",
+            "parfile": "HAREmulate.txt",
+            "geometries": [
+                "trench_mask.dx"
+            ],
+            "title": "Geometric HAR Etch",
+            "image": "cover.png",
+            "description": "Emulation of a highly direction etch using the \"ConstantRates\"-Model."
+        },
+        {
+            "devicelevel": 1,
+            "prefixpath": "HARPhysical",
+            "parfile": "HARPhysical.txt",
+            "geometries": [
+                "trench_mask.dx"
+            ],
+            "title": "Physical HAR Etch",
+            "image": "cover.png",
+            "description": "High aspect ratio Si etch using a slightly tilted source characteristic and the \"SF6_CH2F2PlasmaEtching\"-Model."
+        },
+        {
+            "devicelevel": 1,
+            "prefixpath": "deposition2D",
+            "parfile": "deposition2D.txt",
+            "geometries": [
+                "geometry2.dx"
+            ],
+            "title": "Geometric Deposition",
+            "image": "cover.png",
+            "description": "Two-dimensional deposition processes using the \"ConstantRates\"-Model and varying \"direction\"-parameter."
+        },
+        {
+            "devicelevel": 2,
+            "prefixpath": "deposition3D",
+            "parfile": "deposition3D.txt",
+            "geometries": [
+                "3d_hole.vtk"
+            ],
+            "title": "Physical Deposition",
+            "image": "cover.png",
+            "description": "Physical Deposition process using the \"NonlinearDeposition\"-Model."
+        },
+        {
+            "devicelevel": 3,
+            "prefixpath": "stackednanosheet",
+            "parfile": "parwasm.txt",
+            "geometries": [
+                "sio2_periodic.vtk",
+                "mask_periodic.vtk",
+                "single_gate_mask.vtk"
+            ],
+            "title": "Stacked Nanosheet",
+            "image": "cover.png",
+            "description": "Geometry creation of a stacked nanosheet geometry through a sequence of emulated processes, i.e., using the \"ConstantRates\"-Model and boolean operations"
+        },
+        {
+            "devicelevel": 3,
+            "prefixpath": "HoleEtching",
+            "parfile": "mirror_sim.txt",
+            "geometries": [
+                "bulk.vtk",
+                "mask.vtk"
+            ],
+            "title": "Two-stage Hole Etching",
+            "image": "cover.png",
+            "description": "Physical etching of a cylindrical hole using the \"SimpleDeposition\"-Model with the sign flipped. First stage with a mask, second after mask removal. The symmetry allows to only simulate a quarter of the cylindric hole by applying reflective boundary conditions in the lateral directions."
+        },
+        {
+            "devicelevel": 3,
+            "prefixpath": "WetEtching",
+            "parfile": "rect_mask_etch.txt",
+            "geometries": [
+                "rect_substrate.vtk",
+                "mask_rect_hole.vtk"
+            ],
+            "title": "Wet Etching",
+            "image": "cover.png",
+            "description": "Wet Etching Example."
+        },
+        {
+            "devicelevel": 3,
+            "prefixpath": "WetEtchingCantilever",
+            "parfile": "cantilever.txt",
+            "geometries": [
+                "cantilever_substrate.vtk",
+                "mask_cantilever.vtk"
+            ],
+            "title": "Wet Etching Cantilever",
+            "image": "cover.png",
+            "description": "Wet Etching Example."
+        }  
+,
+        {
+            "devicelevel": 2,
+            "prefixpath": "DoublePatterning",
+            "parfile": "DoublePatterning.txt",
+            "geometries": [
+                "2D_slab.dx",
+                "2D_double_mask.dx"
+            ],
+            "title": "Double Patterning",
+            "image": "cover.png",
+            "description": "2D Double Patterning Example."
+        } 
+    ]
+}
